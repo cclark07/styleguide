@@ -361,6 +361,12 @@
         }
     }
 
+    .pullout-block__content {
+        @include mobile {
+            background: url('#{$root}/images/components/crinkled-paper-effect_mobile.jpg');
+        }
+    }
+
     .pullout-block__content-subheading {
         margin-bottom: $baseline;
     }
