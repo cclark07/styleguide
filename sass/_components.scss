@@ -1355,6 +1355,103 @@
     }
 }
 
+// Product Hero - Blog
+//
+// default - Default Hero
+// .plain-heading - Removes background color of main hero heading
+// .hide-cta - Hero without CTA Button
+//
+// markup:
+// <div class="product-hero product-hero--blog {$modifiers}">
+//      <div class="product-hero--blog-content">
+//          <div class="columns is-mobile">
+//              <div class="column">
+//                  <h2><span>Crypto</span></h2>
+//              </div>
+//          </div>
+//          <div class="columns">
+//              <div class="column">
+//                  <h3>Why Bitcoin is like the internet was in 1994</h3>
+//                  <p>Bitcoin has turned tens of thousands of investors into millionaires.</p>
+//              </div>
+//          </div>
+//      </div>
+//      <div class="columns has-text-centered hero-cta__container">
+//          <a href="#" class="button">Read More</a>
+//      </div>
+// </div>
+//
+// Styleguide 5.18
+.product-hero--blog {
+    background-image: url('#{$root}/images/components/product-hero-bg-6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: $baseline;
+    color: white;
+
+    @include tablet {
+        padding: $baseline ($baseline * 2);
+        padding-bottom: ($baseline * 4);
+    }
+
+    h2 {
+        font-weight: 800;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+        font-size: $size-3;
+
+        @include tablet {
+            font-size: $size-2;
+        }
+    }
+
+    h3 {
+        font-size: $size-5;
+        line-height: $size-4;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            font-size: $size-4;
+            line-height: $size-3;
+        }
+    }
+    p {
+        font-size: $size-6;
+        font-weight: 800;
+        text-transform: none;
+        line-height: $size-5;
+        margin-bottom: .5rem;
+
+        @include tablet {
+            font-size: $size-5;
+            line-height: $size-4;
+            margin-bottom: 0;
+        }
+    }
+
+    .product-hero--blog-content {
+        @include tablet {
+            max-width: 50%;
+        }
+    }
+
+    &.hide-cta {
+        padding-bottom: $baseline;
+    }
+
+    &.plain-heading {
+        h2 {
+            margin-left: 0;
+            span {
+                color: white;
+                background: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
 // Card Grid
 //
 // default - Default Hero
@@ -1488,7 +1585,7 @@
 //      </div>
 // </div>
 //
-// Styleguide 5.18
+// Styleguide 5.19
 .card-grid {
     padding: $baseline;
     background: white;
@@ -1589,7 +1686,7 @@
 // </div>
 // </div>
 //
-// Styleguide 5.19
+// Styleguide 5.20
 .product-links-block {
     background-image: url('#{$root}/images/components/product-links-block_bg_mobile.jpg');
     background-position: center;
@@ -1717,7 +1814,7 @@
 //    </a>
 // </div>
 //
-// Styleguide 5.20
+// Styleguide 5.21
 .play-block {
 
     background-image: url('#{$root}/images/components/product-play-block-bg.jpg');
@@ -1799,7 +1896,7 @@
 // <div class="spacer-row">
 // </div>
 //
-// Styleguide 5.21
+// Styleguide 5.22
 .spacer-row {
     padding: .5rem;
     background-color: #363e4e;
@@ -1838,7 +1935,7 @@
 //      </div>
 // </div>
 //
-// Styleguide 5.22
+// Styleguide 5.23
 .product-listing--item {
     padding: $baseline;
 
@@ -1897,7 +1994,7 @@
 //     <li class="column is-paddingless">Step 3</li>
 // </ol>
 //
-// Styleguide 5.23
+// Styleguide 5.24
 .signup-progress {
     counter-reset: step;
     overflow: hidden;
@@ -1996,7 +2093,7 @@
 //      <p class="email-capture--error">Oops! It looks like something went wrong. Please try again.</p>
 // </div>
 //
-// Styleguide 5.24
+// Styleguide 5.25
 .email-capture {
     padding: $baseline;
 
