@@ -218,6 +218,9 @@ a.button {
 // .product-button-2 - Variant 2
 // .product-button-3 - Variant 3
 // .product-button-4 - Variant 4
+// .product-button--tv - TV Branded Variant
+// .product-button--pub - Pub Branded Variant
+// .product-button--podcast - Podcasts Branded Variant
 // :hover   - Hover state
 // :focus   - Focus state
 // 
@@ -238,7 +241,7 @@ a.button {
 
     .button {
         background: transparent;
-        color: $color-rose;
+        color: #232323;
         border: 4px solid $color-rose;
         font-weight: 800;
         padding: .5rem 1rem;
@@ -298,6 +301,72 @@ a.button {
             left: auto;
             bottom: 0;
             right: 0;
+        }
+    }
+
+    &.product-button--tv {
+        .button {
+            background: transparent;
+            color: #232323;
+            border: 4px solid #31FEE8;
+            font-weight: 800;
+            padding: .5rem 1rem;
+        }
+
+        &:after {
+            background: url('#{$root}/images/buttons/splatter-effect--tv.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+
+        &:hover {
+            .button {
+                background: #31FEE8;
+            }
+        }
+    }
+
+    &.product-button--pub {
+        .button {
+            background: transparent;
+            color: #232323;
+            border: 4px solid #f8931f;
+            font-weight: 800;
+            padding: .5rem 1rem;
+        }
+
+        &:after {
+            background: url('#{$root}/images/buttons/splatter-effect--publications.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+
+        &:hover {
+            .button {
+                background: #f8931f;
+            }
+        }
+    }
+
+    &.product-button--podcast {
+        .button {
+            background: transparent;
+            color: #232323;
+            border: 4px solid #a822ef;
+            font-weight: 800;
+            padding: .5rem 1rem;
+        }
+
+        &:after {
+            background: url('#{$root}/images/buttons/splatter-effect--podcasts.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+
+        &:hover {
+            .button {
+                background: #a822ef;
+            }
         }
     }
 }
