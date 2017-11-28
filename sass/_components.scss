@@ -3456,14 +3456,14 @@
     }
 }
 
-// TEST
+// Product Info Columns
 //
 // default - Default Hero
 //
 // markup:
-// <div class="test">
+// <div class="product-info-columns">
 //  <div class="columns">
-//      <div class="column is-4">
+//      <div class="column">
 //          <div class="card card--tv">
 //              <div class="card-splash">
 //                  <figure class="image">
@@ -3474,26 +3474,62 @@
 //                  </figure>
 //              </div>
 //              <div class="card-content">
-//                  <div class="content">Have a “holy shit” moment with daily videos covering thought-provoking investment ideas that will make you think differently and invest better. Real Vision has been described as “TED Talks for Finance”. Watch and learn as the world’s greatest investment pros discuss the financial topics that really matter. Get this if you want unbiased market insights and trade ideas from the most successful investors.</div>
+//                  <div class="product-pricing"><span class="product-pricing--price">$597</span><small>/year</small></div>
+//              </div>
+//              <div class="card-content">
+//                  <a href="#" class="button">Try it FREE for 14 days</a>
+//              </div>
+//              <div class="card-content">
+//                  <div class="content">
+//                      <p class="content--detail">Have a “holy shit” moment with daily videos covering thought-provoking investment ideas that will make you think differently and invest better. Real Vision has been described as “TED Talks for Finance”. Watch and learn as the world’s greatest investment pros discuss the financial topics that really matter. Get this if you want unbiased market insights and trade ideas from the most successful investors.</p>
+//                  </div>
+//              </div>
+//              <div class="card-content">
+//                  <div class="content">
+//                      <ul>
+//                          <li>Selling point 1</li>
+//                          <li>Selling point 2</li>
+//                          <li>Selling point 3</li>
+//                          <li>Selling point 4</li>
+//                      </ul>
+//                  </div>
 //              </div>
 //          </div>
 //      </div>
-//      <div class="column is-4">
+//      <div class="column">
 //          <div class="card card--think-tank">
 //              <div class="card-splash">
 //                  <figure class="image">
 //                      <img src="https://bulma.io/images/placeholders/480x480.png" alt="Placeholder image">
 //                  </figure>
 //                  <figure class="product-logo">
-//                      <svg xmlns="http://www.w3.org/2000/svg" class="logo_publications" viewBox="30 0 444 170.3"><path class="logo_publications--banner" d="M285 123.6h170.4v22.6H285z"/><path class="logo_publications--text" d="M320.7 0c-1.5 3.1-3 6.2-4.5 9.2-5.4 11.1-73.2 150.3-78.1 160.3l-.4.8-.4-.7L155.5 0h41.3s41.1 89.1 41.3 89.2C238.2 89.1 279.2.3 279 0h41.7zm153.1 101.1h-1l-26.4-28.4v27.5h-4.6V62.5h1.2l.4.4 25.5 27.3s.2.2.4.2h.1s.1 0 .1-.1v-27h4.5l-.2 37.8zM30 63.1s7.2 0 10.4.1c1.6 0 3.2.2 4.7.8 3.2 1.2 5 3.6 5.5 6.9.3 1.8.2 3.6-.4 5.4-1.1 3.3-3.3 5.4-6.7 6.2-.3.1-.9.3-1.8.5-.1 0 10.2 17.2 10.2 17.2h-5.4l-9.7-16.9h-2v17H30V63.1zm4.8 16.1c2.5 0 4.9 0 7.2-.5 1.7-.4 2.9-1.4 3.5-3 .6-1.3.6-2.7.4-4.1-.4-2-1.6-3.3-3.5-3.9-.6-.2-1.2-.3-1.8-.3-1.7-.1-3.4-.1-5.2-.1h-.6v11.9zm95.5 21h-.7L125 89.6h-13.8c-1.5 3.5-3 7.1-4.5 10.6h-5c3.8-8.8 15.6-36.4 16.4-37.9 0 0 .1-.1.2-.1h.1c.2.2.3.5.5.8l15.8 37.2m-11.4-14.7c-1.8-4.3-3.3-8.5-5.1-12.8-1.8 4.4-3.5 8.6-5.3 12.8h10.4zM72.5 78h14.4v4.1H72.6l-.1 13.7h14.7v4.2l-19.4.1-.1-36.8H87v4.3H72.6L72.5 78zm81.7 17.9H166v4.3h-16.5V63.3h4.6l.1 32.6zm252.2 4.9c-5 0-9.5-1.6-13.2-5.1-2.5-2.4-4.2-5.2-5.1-8.6-1.3-4.9-1-9.7 1.2-14.2 2.5-5.1 6.6-8.4 12.1-9.8 4.1-1.1 8.2-1 12.1.4 6 2.1 10 6.3 11.7 12.4 1.9 6.9.5 13.2-4.3 18.6-3 3.4-6.9 5.3-11.4 6-1 .3-2.1.4-3.1.3zm-.1-4.4c.7 0 1.4-.1 2.1-.1.4 0 .9-.1 1.3-.2 4.9-1.1 8.4-3.9 10.3-8.6 1.2-3 1.4-6.1.8-9.2-.5-2.5-1.5-4.8-3.2-6.7-3.1-3.3-6.9-4.8-11.4-4.6-5.7.2-9.9 2.9-12.4 8.1-1.9 3.9-1.9 8-.5 12.1 1.9 5.6 7 9.3 13 9.2zM330.6 93l4.1-1.9s.2.5.4.8c.4.9.8 1.9 1.5 2.7 1.5 2 3.8 2.5 5.9 1.9 2.1-.5 3.6-2.4 3.9-4.7.4-2.7-.5-4.9-2.8-6.4-1.1-.7-2.1-1.4-3.3-2-1.6-.8-3.2-1.8-4.6-2.9-2.6-2-3.9-4.6-3.9-7.9 0-2.4.5-4.6 2-6.6 2.1-2.7 5-3.7 8.3-3.4 4 .3 6.7 2.5 8.5 6l.1.2-3.7 2.1s-.6-.8-.8-1.2c-.9-1.3-1.9-2.4-3.5-2.8-2.7-.7-5.4.8-6.2 3.5-.7 2.7 0 4.7 2.1 6.4 1.3 1 2.7 1.7 4.1 2.5 1.4.8 2.7 1.5 4 2.5 5.8 4.2 5.4 13.1.2 17-4.9 3.8-12.4 2.1-15.3-3.3-.4-.7-.6-1.4-.9-2.1.1-.1-.1-.4-.1-.4zm-19.8-29.8h4.6v37h-4.6zm56.2 0h4.6v37H367z"/><path class="logo_publications--banner" d="M455 152.5H268.4c1.6-3.4 3.2-6.7 4.9-10.1 4.2-8.6 8.4-17.3 12.7-25.9.1-.2.2-.5.4-.7H473s-5.6 11.5-8.4 17.2l-9.6 19.5zm-18.5-25.9v10.2c-3.2-3.7-6.3-7.1-9.2-10.5h-2.1v15.5h3v-10.2c3.2 3.6 6.2 7.1 9.2 10.5.7 0 1.4.1 2-.1v-15.4h-2.9zm-32.1 7.5c0 4.6 3.4 8 8 8 4.7 0 8.2-3.4 8.2-8 0-4.5-3.5-7.9-8-7.9-4.6 0-8.2 3.4-8.2 7.9zm-78.1-.5c1.3-1.2 1.7-2.4 1.3-4.1-.3-1.3-1.1-2.3-2.4-2.7-2.1-.6-4.2-.3-6.3-.4v15.3c2 0 3.9.1 5.8 0s3.4-.9 4.1-2.7c.9-2.3 0-4.3-2.5-5.4zm-24.8-7c0 3.4-.1 6.8 0 10.1.1 2.2 1.1 3.9 3.2 4.9 1.1.5 2.3.7 3.5.6 3.1-.2 5.2-2 5.4-5.1-.4-3.5.1-6.9.1-10.3 0 0-.1-.1-.1-.2h-2.8v8.6c0 .8 0 1.5-.3 2.2-.5 1.4-1.9 2.1-3.4 1.9-1.6-.2-2.6-1.3-2.6-3v-8.8c0-.3-.1-.8-.1-.8s-1.9-.1-2.9-.1zm81 15.2c-2.1-5.2-4.3-10.4-6.4-15.5h-2.3c-2.2 5.1-4.4 10.3-6.6 15.5h3.2c.5-1.1.9-2.1 1.4-3.2h6.2c.5 1.1.9 2.1 1.3 3.2h3.2zm-91.9-.1v-5.6h2.5c2.6-.1 4.4-1.7 4.5-4.3.2-2.5-1.2-4.7-3.5-5.2-2.1-.4-4.3-.2-6.5-.2v15.3h3zM452.2 130c.5-.7 1.1-1.3 1.5-2.1-1.5-1.3-3.3-1.8-5.2-1.6-2 .2-3.6 1.7-3.9 3.6-.4 2.1.4 3.4 2.5 4.4.9.4 1.8.7 2.7 1.1.6.2 1.1.6 1.3 1.2.6 1.4-.7 3-2.5 2.8-1.3-.1-2.2-.9-2.9-2l-1.8 1.8c1.1 2 3.1 3 5.7 2.9 2.4-.1 4.3-1.7 4.7-4 .5-2.4-.5-4.1-3-5.2-.5-.2-1.1-.4-1.5-.6-.5-.2-1-.4-1.4-.7-.9-.6-.9-1.6-.1-2.3.4-.4.9-.5 1.4-.5.9-.1 1.7.5 2.5 1.2zm-88.1 7.9c-2.5 1.9-5.1 2-7 .3-1.9-1.7-2.2-4.8-.8-7 .9-1.3 2.1-2.1 3.7-2.2 1.6-.2 2.8.6 4 1.5v-3.4c-3.6-1.8-7.8-.8-10.1 2.3-2.3 3.1-2.1 7.5.5 10.2 2.4 2.6 6.9 3.3 9.6 1.5.1-1 .1-2 .1-3.2zm19.5-8.8h3.4v12.6h3v-12.6h3.4v-2.6h-9.7c-.1.9-.1 1.7-.1 2.6zm-47 10.1v-12.6h-2.9v15.1h7.6v-2.5h-4.7zm63.4 2.5v-15.1h-2.9v15.1h2.9zm-54.9-15.1v15.1h2.9v-15.1h-2.9z"/><path class="logo_publications--smalltext" d="M436.5 126.6h2.9V142c-.7.2-1.3.1-2 .1-3-3.4-6-6.9-9.2-10.5v10.2h-3v-15.5h2.1c3 3.4 6 6.9 9.2 10.5v-10.2zm-32.1 7.5c0-4.5 3.5-7.9 8.2-7.9 4.5 0 8 3.5 8 7.9 0 4.6-3.5 8-8.2 8-4.5 0-8-3.4-8-8zm8.1-5.2c-2.8 0-5.1 2.4-5.1 5.2 0 2.9 2.3 5.3 5.1 5.3 2.7 0 5.1-2.5 5.1-5.3s-2.3-5.2-5.1-5.2zm-86.2 4.7c2.5 1.1 3.4 3.1 2.6 5.4-.7 1.9-2.2 2.7-4.1 2.7-1.9.1-3.9 0-5.8 0v-15.3c2.1 0 4.2-.2 6.3.4 1.3.4 2.1 1.4 2.4 2.7.3 1.7-.1 2.9-1.4 4.1zm-4.4 1.5v4.2c.8.1 1.5.1 2.3 0 1.1-.1 1.8-.9 1.9-1.9.1-1.1-.6-1.9-1.7-2.1-.8-.2-1.6-.2-2.5-.2zm0-2.1c1.1-.1 2.2.1 2.8-1 .4-.7.5-1.5 0-2.2-.7-1-1.8-.8-2.8-.8v4zm-20.4-6.4h3v9.7c0 1.7 1 2.8 2.6 3 1.5.2 2.9-.5 3.4-1.9.3-.7.3-1.5.3-2.2v-8.6h2.9s.1 7-.1 10.5c-.2 3.1-2.4 5-5.4 5.1-1.2.1-2.4-.1-3.5-.6-2.1-.9-3.1-2.7-3.2-4.9-.1-3.4 0-6.7 0-10.1zm81 15.2h-3.2c-.4-1-.9-2.1-1.3-3.2h-6.2c-.5 1-.9 2.1-1.4 3.2h-3.2c2.2-5.2 4.4-10.3 6.6-15.5h2.3c2.1 5.1 4.2 10.2 6.4 15.5zm-9.6-5.7h4.1c-.7-1.8-1.4-3.5-2.1-5.4-.7 1.8-1.4 3.5-2 5.1-.1.1 0 .2 0 .3zm-82.3 5.6h-3v-15.3c2.2 0 4.3-.2 6.5.2 2.3.4 3.7 2.6 3.5 5.2-.2 2.6-1.9 4.2-4.5 4.3h-2.5v5.6zm0-8.2h1.9c1.3-.1 2-.9 2-2.1 0-1.2-.7-2.1-1.9-2.2-.7-.1-1.3 0-2 0v4.3zm161.6-3.5c-.8-.7-1.5-1.3-2.6-1.2-.6 0-1.1.2-1.4.5-.8.7-.8 1.7.1 2.3.4.3.9.5 1.4.7.5.2 1.1.4 1.5.6 2.4 1.1 3.4 2.8 3 5.2-.4 2.3-2.3 3.9-4.7 4-2.5.1-4.6-.9-5.7-2.9l1.8-1.8c.7 1.1 1.6 1.8 2.9 2 1.7.1 3.1-1.3 2.5-2.8-.2-.6-.7-.9-1.3-1.2-.9-.4-1.8-.7-2.7-1.1-2.1-.9-2.8-2.4-2.5-4.4.3-1.9 1.9-3.4 3.9-3.6 1.9-.2 3.7.3 5.2 1.6-.3.8-.9 1.4-1.4 2.1zm-88.1 7.9v3.3c-2.7 1.8-7.1 1.1-9.6-1.5-2.6-2.8-2.8-7.1-.5-10.2 2.3-3.1 6.5-4.1 10.1-2.3v3.4c-1.2-1-2.4-1.7-4-1.5-1.6.2-2.8.9-3.7 2.2-1.4 2.2-1.1 5.3.8 7 1.8 1.6 4.3 1.5 6.9-.4zm19.5-8.8v-2.6h9.7v2.6h-3.4v12.6h-3v-12.6h-3.3zm-47 10.1h4.6v2.5h-7.6v-15.1h2.9c.1 4.2.1 8.3.1 12.6zm63.4 2.5h-2.9v-15.1h2.9v15.1zm-54.9-15.1h2.9v15.1h-2.9v-15.1z"/><path class="logo_publications--banner" d="M412.5 128.9c2.7 0 5.1 2.4 5.1 5.2 0 2.8-2.4 5.3-5.1 5.3-2.8 0-5.1-2.4-5.1-5.3 0-2.8 2.4-5.2 5.1-5.2zm-90.6 6.2c.9 0 1.7-.1 2.5.1 1.1.3 1.7 1.1 1.7 2.1-.1 1-.8 1.8-1.9 1.9-.7.1-1.5.1-2.3 0v-4.1zm0-2.1v-4c1.1 0 2.1-.2 2.8.8.5.7.5 1.5 0 2.2-.6 1.1-1.7.8-2.8 1zm51 3.1v-.3c.7-1.6 1.3-3.2 2-5.1.7 1.9 1.4 3.6 2.1 5.4h-4.1zm-82.3-2.6v-4.4c.7 0 1.3-.1 2 0 1.2.1 1.9 1 1.9 2.2 0 1.2-.8 2-2 2.1-.6.1-1.2.1-1.9.1z"/></svg>
+//                      <img src="/images/logos/think_tank_logo_black.png"/>
 //                  </figure>
 //              </div>
 //              <div class="card-content">
-//                  <div class="content">A second opinion is always a good idea. But who do you listen to? How about a curated selection of the thinking of the world’s leading investment researchers? Get out of your echo chamber and access in-depth analysis and actionable investment research with hand-picked bi-weekly reports from top independent financial writers. Get this if you want diverse quality investment research.</div>
+//                  <div class="product-pricing"><span class="product-pricing--price">$299</span><small>/year</small></div>
+//              </div>
+//              <div class="card-content">
+//                  <a href="#" class="button">Try it FREE for 14 days</a>
+//              </div>
+//              <div class="card-content">
+//                  <div class="content">
+//                      <p class="content--detail">A second opinion is always a good idea. But who do you listen to? How about a curated selection of the thinking of the world’s leading investment researchers? Get out of your echo chamber and access in-depth analysis and actionable investment research with hand-picked bi-weekly reports from top independent financial writers. Get this if you want diverse quality investment research.</p>
+//                  </div>
+//              </div>
+//              <div class="card-content">
+//                  <div class="content">
+//                      <ul>
+//                          <li>Selling point 1</li>
+//                          <li>Selling point 2</li>
+//                          <li>Selling point 3</li>
+//                          <li>Selling point 4</li>
+//                      </ul>
+//                  </div>
 //              </div>
 //          </div>
 //      </div>
-//      <div class="column is-4">
+//      <div class="column">
 //          <div class="card card--macro-insiders">
 //              <div class="card-splash">
 //                  <figure class="image">
@@ -3504,7 +3540,25 @@
 //                  </figure>
 //              </div>
 //              <div class="card-content">
-//                  <div class="content">Want to read the same quality macro research as the biggest investors but without the high price tag? Macro Insiders let’s you do just that. Two globally renowned macro researchers spent a year developing this product. Get written reports, video discussion and additional commentary so you can track new investment opportunities. Get this if you want macro-level market insight.</div>
+//                  <div class="product-pricing"><span class="product-pricing--price">$2997</span><small>/year</small></div>
+//              </div>
+//              <div class="card-content">
+//                  <a href="#" class="button">Get premium insight</a>
+//              </div>
+//              <div class="card-content">
+//                  <div class="content">
+//                      <p class="content--detail">Want to read the same quality macro research as the biggest investors but without the high price tag? Macro Insiders let’s you do just that. Two globally renowned macro researchers spent a year developing this product. Get written reports, video discussion and additional commentary so you can track new investment opportunities. Get this if you want macro-level market insight.</p>
+//                  </div>
+//              </div>
+//              <div class="card-content">
+//                  <div class="content">
+//                      <ul>
+//                          <li>Selling point 1</li>
+//                          <li>Selling point 2</li>
+//                          <li>Selling point 3</li>
+//                          <li>Selling point 4</li>
+//                      </ul>
+//                  </div>
 //              </div>
 //          </div>
 //      </div>
@@ -3512,7 +3566,7 @@
 // </div>
 //
 // Styleguide 5.23
-.test {
+.product-info-columns {
     .card-splash {
         background: white;
         position: relative;
@@ -3532,9 +3586,41 @@
         }
     }
 
-    .card-content {
+    .card .card-content {
         border-top: none;
         padding: .75rem;
+
+        a.button {
+            padding: $baseline / 3;
+            width: 100%;
+            text-align: center;
+            color: $text;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: none;
+        }
+
+        .content {
+            font-weight: 700;
+        }
+
+        .product-pricing {
+            text-align: center;
+            font-weight: bold;
+
+            .product-pricing--price {
+                font-size: $size-1;
+            }
+
+            small {
+                font-size: $size-4;
+            }
+        }
     }
 
     .card--tv {
@@ -3543,7 +3629,15 @@
         }
 
         .card-content {
-            border: 1px solid rgba(49, 254, 232, .2);
+            border: 1px solid rgba(49, 254, 232, .5);
+        }
+
+        a.button {
+            background: $color-cyan;
+
+            &:hover {
+                border-color: $color-cyan;
+            }
         }
     }
 
@@ -3553,7 +3647,15 @@
         }
 
         .card-content {
-            border: 1px solid rgba(248, 147, 31, .2);
+            border: 1px solid rgba(248, 147, 31, .5);
+        }
+
+        a.button {
+            background: #f8931f;
+
+            &:hover {
+                border-color: #f8931f;
+            }
         }
     }
 
@@ -3561,8 +3663,17 @@
         .card-splash {
             box-shadow: 0 0 200px #07fff8 inset
         }
+
         .card-content {
-            border: 1px solid rgba(7, 255, 248, .2);
+            border: 1px solid rgba(7, 255, 248, .5);
+        }
+
+        a.button {
+            background: #07fff8;
+
+            &:hover {
+                border-color: #07fff8;
+            }
         }
     }
 
