@@ -3579,13 +3579,16 @@
 //
 // Styleguide 5.23
 .product-info-columns {
-    .splash-container {
-        overflow: hidden;
+    .card {
         &:hover {
             .card-splash {
                 transform: scale(1.2);
             }
         }
+    }
+
+    .splash-container {
+        overflow: hidden;
     }
 
     .card-splash {
