@@ -3456,12 +3456,12 @@
     }
 }
 
-// Product Info Columns
+// Pricing Table
 //
 // default - Default Hero
 //
 // markup:
-// <div class="product-info-columns">
+// <div class="pricing-table">
 //  <div class="columns">
 //      <div class="column">
 //          <div class="card card--tv">
@@ -3578,7 +3578,7 @@
 // </div>
 //
 // Styleguide 5.23
-.product-info-columns {
+.pricing-table {
     .card {
         &:hover {
             .card-splash {
