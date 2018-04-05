@@ -3945,16 +3945,29 @@
 
     &.is-bottom {
         width: 100%;
-        max-width: 100%;
         position: fixed;
         bottom: 0;
         z-index: 10;
 
-        @include desktop {
-            max-width: 960px;
+        @include from($desktop) {
+            max-width: $desktop - (2 * $gap);
+            width: $desktop - (2 * $gap);
         }
-        @include widescreen {
-            max-width: 1152px;
+        @include until($widescreen) {
+            max-width: $widescreen - (2 * $gap);
+            width: auto;
+        }
+        @include until($fullhd) {
+            max-width: $fullhd - (2 * $gap);
+            width: auto;
+        }
+        @include from($widescreen) {
+            max-width: $widescreen - (2 * $gap);
+            width: $widescreen - (2 * $gap);
+        }
+        @include from($fullhd) {
+            max-width: $fullhd - (2 * $gap);
+            width: $fullhd - (2 * $gap);
         }
     }
 }
