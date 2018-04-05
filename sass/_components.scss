@@ -3949,7 +3949,7 @@
         bottom: 0;
         z-index: 10;
 
-        @include until($desktop) {
+        @include from($desktop) {
             max-width: 960px;
             width: 960px;
         }
