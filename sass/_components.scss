@@ -3960,16 +3960,16 @@
     }
 }
 
-// Expandable Text
+// Expandable Container
 //
 // default - Collapsed
 // .expanded - Expanded
 // 
 // markup:
-// <div class="expandable-text prospect-component {$modifiers}">
+// <div class="expandable-container prospect-component {$modifiers}">
 //     <div class="columns">
 //          <div class="column">
-//              <h3>Why do I need Real Vision?</h3>
+//              <h3 class="is-size-4 is-uppercase">Why do I need Real Vision?</h3>
 //              <div class="dropdown-content">
 //                  <p>Because who wouldn’t want to know what the best investors on the planet are thinking?</p>
 //                  <p>It just helps you make better informed decisions.</p>
@@ -3982,9 +3982,7 @@
 //  </div> 
 // 
 // Styleguide 5.25
-.expandable-text {
-    @extend .is-paper;
-
+.expandable-container {
     .dropdown-content {
         height: 0;
         padding: 0;
@@ -3997,11 +3995,11 @@
 
     &.expanded {
         h3 {
-            margin-bottom: $baseline;
+            margin-bottom: 1rem;
         }
         .dropdown-content {
             opacity: 1;
-            padding-left: $baseline / 2;
+            padding: 1rem;
             margin-top: auto;
             transform: scaleY(1);
             display: block;
