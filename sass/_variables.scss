@@ -3,7 +3,7 @@ $baseline: 1.5rem !default;
 $root: '/styleguide' !default;
 $tablet: 768px !default;
 $fa-font-path: "#{$root}/fonts/font-awesome" !default;
-$family-sans-serif: 'Proxima Nova';
+$family-sans-serif: 'Function Pro';
 // styleguide:ignore:end
 
 // Colors
@@ -50,7 +50,7 @@ $brand: $color-cyan !default;
 // <div style="font-size: 2rem; line-height:1.5; font-family: monospace">(800) <span class="function-pro" style="font-weight: 800;">The quick brown fox jumps over the lazy dog.</span></div>
 // <div style="font-size: 2rem; line-height:1.5; font-family: monospace">(900) <span class="function-pro" style="font-weight: 900;">The quick brown fox jumps over the lazy dog.</span></div>
 // 
-// Styleguide 1.3 
+// Styleguide 1.3
 @font-face {
     font-family: 'Function Pro';
     src: url('#{$root}/fonts/function-pro/FunctionPro-Book-webfont.eot');

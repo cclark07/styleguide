@@ -1,80 +1,101 @@
 body {
-    font-family: 'Proxima Nova';
+    font-family: 'Function Pro';
+}
+
+.is-function-pro {
+    font-family: 'Function Pro' !important;
+}
+.is-old-press {
+    font-family: 'Old Press' !important;
+}
+
+// Colors
+//
+// $color-blue-new - Trustworthy Intuitive
+// $color-green-new - Global Valuable
+// $color-pink-new - Optimistic Sexual
+// $color-purple-new - Pride Creative
+// $color-orange-new - Vibrant Extroverted
+// $color-yellow-new - Confidence Energy
+// $color-text-new - Standard Body Copy Color
+//
+// markup:
+// <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+//
+// Styleguide 9.1
+$color-blue-new: #00BCD4;
+$color-green-new: #ADDE33;
+$color-pink-new: #DA1C5C;
+$color-purple-new: #991E67;
+$color-orange-new: #F6921E;
+$color-yellow-new: #F1CC00;
+$color-text-new: black;
+
+.is-blue {
+    color: $color-blue-new;
+}
+.is-green {
+    color: $color-green-new;
+}
+.is-pink {
+    color: $color-pink-new;
+}
+.is-purple {
+    color: $color-purple-new;
+}
+.is-orange {
+    color: $color-orange-new;
+}
+.is-yellow {
+    color: $color-yellow-new;
+}
+.is-text {
+    color: $color-text-new;
 }
 
 // Headings
 //
 // markup:
-// <h1>Heading 1</h1>
-// <h2>Heading 2</h2>
-// <h3>Heading 3</h3>
-// <h4>Heading 4</h4>
-// <h5>Heading 5</h5>
-// <h6>Heading 6</h6>
+// <h1 class="is-function-pro is-orange">Large Header<span class="subhead is-text">Subhead</span></h1>
+// <h2 class="is-function-pro">Medium Header<span class="subhead is-text">Subhead</span></h2>
+// <h3 class="is-function-pro">Small <span class="subhead is-text">Header</span></h3>
 //
-// Styleguide 9.1
+// Styleguide 9.2
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Function Pro';
+h3 {
     font-weight: 700;
-    line-height: 1;
+    .subhead {
+        display: block;
+        font-weight: normal;
+        margin-left: .25rem;
+    }
 }
 
 h1 {
-    font-size: $size-1;
+    font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
+    .subhead {
+        font-size: 1.5rem;
+    }
 }
 
 h2 {
-    font-size: $size-2;
+    font-size: $size-1;
+    font-weight: 800;
+    text-transform: uppercase;
+    .subhead {
+        font-size: 1.25rem;
+    }
 }
 
 h3 {
-    font-size: $size-3;
-}
-
-h4 {
     font-size: $size-4;
-}
-
-h5 {
-    font-size: $size-5;
-}
-
-h6 {
-    font-size: $size-6;
-}
-
-// Inverse Headings
-//
-// markup:
-// <h1 class="is-inverse"><span>Heading 1</span></h1>
-// <h2 class="is-inverse"><span>Heading 2</span></h2>
-// <h3 class="is-inverse"><span>Heading 3</span></h3>
-// <h4 class="is-inverse"><span>Heading 4</span></h4>
-// <h5 class="is-inverse"><span>Heading 5</span></h5>
-// <h6 class="is-inverse"><span>Heading 6</span></h6>
-//
-// Styleguide 9.2
-h1,h2,h3,h4,h5,h6 {
-    $padding: 0.5ex;
-    &.is-inverse {
-        text-transform: uppercase;
-        padding: 0 $padding;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        font-weight: 800;
-        color: white;
-
-        span {
-            background-color: $color-dark-gray;
-            box-shadow: $padding 0 0 $color-dark-gray, -$padding 0 0 $color-dark-gray;
-        }
+    font-weight: 800;
+    text-transform: uppercase;
+    .subhead {
+        display: inline;
     }
 }
 
@@ -87,6 +108,7 @@ h1,h2,h3,h4,h5,h6 {
 // Styleguide 9.3
 p {
     line-height: $baseline;
+    font-family: 'Function Pro';
 }
 
 // Lists
