@@ -151,7 +151,24 @@ ol {
 }
 
 ul {
-    list-style-type: disc;
+    list-style-type: none;
+
+    li {
+        margin-left: 10px;
+        position: relative;
+
+        &:before {
+            top: 50%;
+            content: "";
+            width: 5px;
+            height: 10px;
+            background: $color-blue-new;
+            position: absolute;
+            left: -15px;
+            border-radius: 20px;
+            transform: translateY(-50%);
+        }
+    }
 }
 
 li+li {
@@ -159,7 +176,7 @@ li+li {
 }
 
 dt {
-    color: $brand;
+    color: $color-blue-new;
     font-weight: 700;
 }
 
