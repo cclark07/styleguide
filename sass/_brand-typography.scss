@@ -12,24 +12,32 @@ body {
 // Colors
 //
 // $color-blue-new - Trustworthy Intuitive
+// $color-blue-secondary-new - Trustworthy Intuitive
 // $color-green-new - Global Valuable
 // $color-pink-new - Optimistic Sexual
 // $color-purple-new - Pride Creative
 // $color-orange-new - Vibrant Extroverted
 // $color-yellow-new - Confidence Energy
+// $color-yellow-secondary-new - Confidence Energy
 // $color-text-new - Standard Body Copy Color
+// $color-disabled-new - Disabled Element Color
+// $color-disabled-secondary-new - Disabled Element Secondary Color
 //
 // markup:
 // <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
 //
 // Styleguide 9.1
 $color-blue-new: #00BCD4;
+$color-blue-secondary-new: #008798;
 $color-green-new: #ADDE33;
 $color-pink-new: #DA1C5C;
 $color-purple-new: #991E67;
 $color-orange-new: #F6921E;
 $color-yellow-new: #F1CC00;
+$color-yellow-secondary-new: #af9403;
 $color-text-new: black;
+$color-disabled-new: #87949b;
+$color-disabled-secondary-new: #4f5558;
 
 .is-blue {
     color: $color-blue-new;
@@ -635,4 +643,70 @@ form {
 // Styleguide 9.14
 .table {
     width: 100%;
+}
+
+// CTA
+//
+// .is-primary - Primary CTA
+// .is-primary:hover - Primary CTA (Hover)
+// .is-primary:active - Primary CTA (Active)
+// .is-secondary - Secondary CTA
+// .is-secondary:hover - Secondary CTA (Hover)
+// .is-secondary:active - Secondary CTA (Active)
+// .disabled - Disabled CTA
+//
+// markup:
+// <a href="#" class="button new {$modifiers}">Subscribe</a>
+//
+// Styleguide 9.15
+a.button.new {
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    transition: all 250ms ease-in-out;
+    font-weight: 700;
+
+    &.is-primary {
+        background: $color-blue-new;
+        color: $color-text-new;
+        border-bottom: 4px solid $color-blue-secondary-new;
+
+        &:hover {
+            border-color: transparent;
+            background: $color-yellow-new;
+            border-bottom: 2px solid $color-yellow-secondary-new;
+        }
+
+        &:active {
+            border-bottom: none;
+            text-decoration: underline;
+            background: transparent;
+            border: 3px solid $color-yellow-new;
+        }
+    }
+    &.is-secondary {
+        background: transparent;
+        color: $color-text-new;
+        border: 3px solid $color-yellow-new;
+
+        &:hover {
+            background: $color-yellow-new;
+        }
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+    &.disabled {
+        background: $color-disabled-new;
+        color: $color-text-new;
+        border-bottom: 4px solid $color-disabled-secondary-new;
+        cursor: not-allowed;
+
+        &:hover {
+            background: $color-disabled-new;
+            color: $color-text-new;
+            border-bottom: 4px solid $color-disabled-secondary-new;
+            cursor: not-allowed;
+        }
+    }
 }
