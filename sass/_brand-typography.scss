@@ -538,71 +538,92 @@ a {
 // Forms
 //
 // markup:
-//<fieldset>
-//    <legend>Legend</legend>
-//    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
-//    <form>
-//        <h2>Form Element</h2>
-//        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
-//        <p>
-//            <label for="text_field">Text Field:</label><br>
-//            <input type="text" id="text_field">
-//        </p>
-//        <p>
-//            <label for="text_area">Text Area:</label><br>
-//            <textarea id="text_area"></textarea>
-//        </p>
-//        <p>
-//            <label for="select_element">Select Element:</label><br>
-//            <select name="select_element">
-//                <optgroup label="Option Group 1">
-//                    <option value="1">Option 1</option>
-//                    <option value="2">Option 2</option>
-//                    <option value="3">Option 3</option>
-//                </optgroup>
-//                <optgroup label="Option Group 2">
-//                    <option value="1">Option 1</option>
-//                    <option value="2">Option 2</option>
-//                    <option value="3">Option 3</option>
-//                </optgroup>
-//            </select>
-//        </p>
-//        <p>
-//            <label for="radio_buttons">Radio Buttons:</label>
-//        </p>
-//        <p>
-//            <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1<br>
-//            <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2<br>
-//            <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3
-//        </p>
-//        <p>
-//            <label for="checkboxes">Checkboxes:</label>
-//        </p>
-//        <p>
-//            <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Radio 1<br>
-//            <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Radio 2<br>
-//            <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Radio 3
-//        </p>
-//        <p>
-//            <label for="password">Password:</label>
-//        </p>
-//        <p>
-//            <input type="password" class="password" name="password">
-//        </p>
-//        <p>
-//            <label for="file">File Input:</label><br>
-//            <input type="file" class="file" name="file">
-//        </p>
-//        <p>
-//            <input class="button" type="reset" value="Clear"> <input class="button" type="submit" value="Submit">
-//        </p>
-//    </form>
-//</fieldset>
+//  <div class="columns">
+//      <div class="column is-12">
+//          <form>
+//              <div class="field">
+//                  <label class="label">Name</label>
+//                  <div class="control">
+//                      <input class="input" type="text" placeholder="Text input">
+//                  </div>
+//              </div>
+//              <div class="field">
+//                  <label class="label">Username</label>
+//                  <div class="control has-icons-left has-icons-right">
+//                      <input class="input is-success" type="text" placeholder="Text input" value="Username">
+//                      <span class="icon is-small is-left">
+//                          <i class="fa fa-user"></i>
+//                      </span>
+//                      <span class="icon is-small is-right">
+//                          <i class="fa fa-check"></i>
+//                      </span>
+//                  </div>
+//                  <p class="help is-success">This username is available</p>
+//              </div>
+//              <div class="field">
+//                  <label class="label">Email</label>
+//                  <div class="control has-icons-left has-icons-right">
+//                      <input class="input is-danger" type="email" placeholder="Email input" value="Email Address">
+//                      <span class="icon is-small is-left">
+//                          <i class="fa fa-envelope"></i>
+//                      </span>
+//                      <span class="icon is-small is-right">
+//                          <i class="fa fa-exclamation-triangle"></i>
+//                      </span>
+//                  </div>
+//                  <p class="help is-danger">This email is invalid</p>
+//              </div>
+//              <div class="field">
+//                  <label class="label">Subject</label>
+//                  <div class="control">
+//                      <div class="select">
+//                          <select>
+//                              <option>Select dropdown</option>
+//                              <option>With options</option>
+//                          </select>
+//                      </div>
+//                  </div>
+//              </div>
+//              <div class="field">
+//                  <label class="label">Message</label>
+//                  <div class="control">
+//                      <textarea class="textarea" placeholder="Textarea"></textarea>
+//                  </div>
+//              </div>
+//              <div class="field">
+//                  <div class="control">
+//                      <label class="checkbox">
+//                          <input type="checkbox">
+//                  I agree to the          <a href="#">terms and conditions</a>
+//                      </label>
+//                  </div>
+//              </div>
+//              <div class="field">
+//                  <div class="control">
+//                      <label class="radio">
+//                          <input type="radio" name="question">Yes
+//                      </label>
+//                      <label class="radio">
+//                          <input type="radio" name="question">No
+//                      </label>
+//                  </div>
+//              </div>
+//              <div class="field is-grouped">
+//                  <div class="control">
+//                      <button class="button is-primary new">Submit</button>
+//                  </div>
+//                  <div class="control">
+//                      <button class="button is-secondary new">Cancel</button>
+//                  </div>
+//              </div>
+//          </form>
+//      </div>
+//  </div>
 //
 // Styleguide 9.13
 
 form {
-
+    padding: 1.5rem;
 }
 
 // Tables -
@@ -659,7 +680,7 @@ form {
 // <a href="#" class="button new {$modifiers}">Subscribe</a>
 //
 // Styleguide 9.15
-a.button.new {
+a.button.new, button.button.new {
     border-radius: 10px;
     padding: .5rem 1rem;
     transition: all 250ms ease-in-out;
