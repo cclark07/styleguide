@@ -344,7 +344,10 @@
 // Styleguide 9.4
 .promoted-show-hero {
     padding: $baseline;
-    background: grey;
+    //background: url(http://via.placeholder.com/1200x675); - Set dynamically during render, uncomment for placeholder
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     .video-card__meta {
         background: #a5a5a5;
